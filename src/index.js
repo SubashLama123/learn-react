@@ -1,14 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// /src/index.js
+import React from "react";
+import ReactDOM from "react-dom/client"; // React 18+ API
+import App from "./App"; // Main App component
+import "./index.css"; // Global CSS (optional, based on your setup)
+import { Provider } from "react-redux";
+import store from '../src/app/store';
+
+// Render the App to the DOM
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>
+  </Provider>
+
+
 );
-
-
