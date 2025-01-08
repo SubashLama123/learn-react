@@ -1,13 +1,12 @@
-import React from 'react';
-import NoteForm from './components/NoteForm';
-import NoteList from './components/NoteList';
+import AddTask from './features/tasks/AddTask';
+import TaskList from './features/tasks/TaskList';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-4">
-      <h1 className="text-3xl font-bold mb-6">Notes App</h1>
-      <NoteForm />
-      <NoteList />
+    <div className="container mx-auto p-4">
+      <h1 className="text-2xl font-bold text-center mb-4">Task Manager</h1>
+      <AddTask />
+      <TaskList />
     </div>
   );
 }
