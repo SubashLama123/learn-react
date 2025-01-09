@@ -1,9 +1,12 @@
+// src/app/store.js
 import { configureStore } from '@reduxjs/toolkit';
-import notesReducer from '../features/notes/notesSlice';
+import counterReducer from '../features/counter/counterSlice';
 
 export const store = configureStore({
   reducer: {
-    notes: notesReducer,
+    counter: counterReducer,
   },
 });
-V
+
+
+
