@@ -25,10 +25,12 @@ const postsSlice = createSlice({
       .addCase(fetchPosts.pending, (state) => {
         state.status = 'loading';
       })
+
       .addCase(fetchPosts.fulfilled, (state, action) => {
         state.status = 'succeeded';
         state.posts = action.payload;
       })
+
       .addCase(fetchPosts.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.error.message;
