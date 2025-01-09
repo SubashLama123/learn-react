@@ -4,7 +4,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client"; // React 18+ API
 import App from "./App"; // Main App component
-import "./index.css"; // Global CSS (optional, based on your setup)
+import "./index.css";
 import { Provider } from "react-redux";
 import store from '../src/app/store';
 
